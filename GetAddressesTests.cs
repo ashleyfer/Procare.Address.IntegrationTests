@@ -46,7 +46,6 @@ public class GetAddressesTests
 		Assert.Contains("CA", address.Addresses.Select(x => x.StateCode));
 		Assert.DoesNotContain("CO", address.Addresses.Select(x => x.StateCode));
 
-
 	} 
 
 	[Fact]
@@ -57,9 +56,7 @@ public class GetAddressesTests
 		//checking for valid address and invalid City name
 		
 		Assert.True(city.Count == 0);
-		Assert.NotNull(city);
 		Assert.Equal(city.Count, city.Addresses!.Count);
-		
-
+	
 	}
 }
